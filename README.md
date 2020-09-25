@@ -32,3 +32,5 @@ URL_PATHE的文件形式長的如user_url.txt這樣
 6.爬linkedin網站時帳號也可能被ban，不過是隱藏ban，就是無法在前端獲得包含使用使用這資訊的main_info，
 
 我自己遇到的情景是短時間內以不同ip位址登入帳號，帳號可能因此被linkedin隱藏ban，如果沒跳ip，跑我的code是沒有被ban的
+
+ps:linkedin反爬機制真的佩服，之後有機緣再來挑戰linkedin
