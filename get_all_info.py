@@ -378,12 +378,10 @@ def get_bio_process(name_code, highest_schoolName, present_companyName, main_inf
   f_w.close()
 
 if __name__ == '__main__':
-  name_code_list = ["andrea-campbell-69911b11", "jessica-baldini-9b053217", "teresa-parker-8a4ab248", "chad-stafford-333202a", "olivia-mcfadin-04945a144" \
-  , "cory-baker-308762b9", "tanjulan-major-8b52137", "kayln-williams-49a35245", "jason-rogers-a57859a", "josh-fox-80552666"]
-  for i in range(len(name_code_list)):
-    src = "./test" + str(i+1) + ".txt"
-    highest_schoolName, present_companyName = get_experience_education_process(src)
-    get_bio_process(name_code_list[i], highest_schoolName, present_companyName, src)
+  main_info = "<Code>裡面的資料"
+  name_code = "LinkedIn網址後面的名字+數字"
+  highest_schoolName, present_companyName = get_experience_education_process(main_info, name_code)
+  get_bio_process(name_code, highest_schoolName, present_companyName, main_info)
 
 
 

@@ -8,6 +8,7 @@ from get_all_info import get_experience_education_process, get_bio_process
 import os
 import shutil
 from change_order import change_order_by_order_list
+from urllib import parse
 
 def make_dir_result():
   try:
@@ -38,6 +39,7 @@ def get_user_url_list(src):
 def get_name_code(url):
   pattern = r'in/.*'
   name_code = re.findall(pattern, url)[0][3:]
+  name_code = parse.unquote(parse.unquote(name_code))
   return name_code
 
 def craw_data_from_user_url(driver, user_url_list):
